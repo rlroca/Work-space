@@ -1,0 +1,231 @@
+@font-face {
+  font-family: opensans;
+  src: url(/assets/fonts/OpenSans-Bold.ttf); }
+@font-face {
+  font-family: openregular;
+  src: url(/assets/fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: quicksand;
+  src: url(/assets/fonts/Quicksand-Regular.ttf); }
+@font-face {
+  font-family: slabo;
+  src: url(/assets/fonts/Slabo27px-Regular.ttf); }
+#header {
+  width: 100%;
+  background-color: #e0ebe9;
+  padding: 15px; }
+  #header .header-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #header .header-m .girl {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 5px; }
+    #header .header-m .bars {
+      color: #707070;
+      font-size: 20px; }
+      @media screen and (min-width: 768px) {
+        #header .header-m .bars {
+          display: none; } }
+    #header .header-m .nav-icon {
+      font-size: 30px;
+      color: #4D4D4D;
+      font-family: slabo; }
+      #header .header-m .nav-icon:hover {
+        text-decoration: none; }
+    #header .header-m .nav-bg {
+      background-color: #e0ebe9;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 75px;
+      padding: 20px;
+      display: none;
+      z-index: 1; }
+      @media screen and (min-width: 768px) {
+        #header .header-m .nav-bg {
+          position: static;
+          width: auto;
+          display: flex !important;
+          padding: 0; } }
+      #header .header-m .nav-bg ul {
+        border: 1px solid #727272;
+        border-radius: 5px;
+        margin-bottom: 0;
+        list-style: none;
+        padding: 0; }
+        @media screen and (min-width: 768px) {
+          #header .header-m .nav-bg ul {
+            border: 0;
+            border-radius: 0;
+            margin: 0;
+            display: flex; } }
+        @media screen and (min-width: 768px) {
+          #header .header-m .nav-bg ul li {
+            margin-left: 10px; } }
+        #header .header-m .nav-bg ul li a {
+          display: block;
+          margin: 25px;
+          border-bottom: 1px solid #727272;
+          color: #4ab19a;
+          font-size: 20px; }
+          #header .header-m .nav-bg ul li a:hover {
+            background-color: rgba(114, 114, 114, 0.1);
+            color: #000;
+            text-decoration: none; }
+          @media screen and (min-width: 768px) {
+            #header .header-m .nav-bg ul li a {
+              padding: 0;
+              border-bottom: 0; }
+              #header .header-m .nav-bg ul li a:hover {
+                background-color: rgba(114, 114, 114, 0); } }
+
+#hero {
+  background-color: #e0ebe9;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    #hero {
+      height: 650px; } }
+  #hero .hero {
+    padding-top: 130px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; }
+    #hero .hero .hero-title {
+      color: #4ab19a;
+      font-size: 50px;
+      font-family: quicksand; }
+      @media screen and (min-width: 768px) {
+        #hero .hero .hero-title {
+          font-size: 60px; } }
+    #hero .hero .hero-text {
+      color: #4ab19a;
+      font-size: 25px;
+      font-family: quicksand;
+      margin-top: 30px; }
+
+#icons {
+  width: 100%;
+  background-color: #fff; }
+  #icons .icon-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+  #icons .icons-bg {
+    text-align: center; }
+    #icons .icons-bg .icon {
+      font-size: 60px; }
+    #icons .icons-bg .icon-title {
+      font-size: 30px;
+      color: #4ab19a;
+      font-family: opensans;
+      margin-top: 10px; }
+    #icons .icons-bg .icon-text {
+      font-size: 20px;
+      color: #5d5d5d;
+      font-family: openregular;
+      margin-top: 25px;
+      margin-bottom: 150px; }
+    #icons .icons-bg .icon-text2 {
+      font-size: 20px;
+      color: #5d5d5d;
+      font-family: openregular;
+      margin-top: 25px; }
+    #icons .icons-bg .line {
+      height: 3px;
+      width: 80px;
+      border: 2px solid green;
+      border-style: dashed; }
+  #icons .icon-2 {
+    margin-top: 30px; }
+  #icons .top-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px; }
+
+h2 {
+  color: #1e836c;
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 60px; }
+
+#icons .row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  margin-top: 30px; }
+
+#work .article {
+  max-width: 600px;
+  text-align: center; }
+
+h3 {
+  font-size: 30px;
+  color: #4ab19a;
+  margin-bottom: 50px; }
+
+#footer-top {
+  width: 100%;
+  background-color: #3B3B3B; }
+  #footer-top .title-footer {
+    font-size: 20px;
+    color: #fff;
+    font-family: opensans;
+    margin-top: 70px; }
+    @media screen and (min-width: 768px) {
+      #footer-top .title-footer {
+        margin-top: 0; } }
+  #footer-top .content-footer {
+    font-size: 16px;
+    color: #fff;
+    font-family: openregular; }
+  #footer-top ul {
+    list-style: none;
+    padding: 0; }
+    #footer-top ul li {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      #footer-top ul li a {
+        cursor: pointer; }
+
+#footer-bottom {
+  background-color: #2A2A2A;
+  text-align: center; }
+  #footer-bottom .space {
+    margin-bottom: 55px;
+    margin-top: 55px; }
+    @media screen and (min-width: 768px) {
+      #footer-bottom .space {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px; } }
+    #footer-bottom .space .title-bottom {
+      font-size: 16px;
+      color: #fff;
+      font-family: openregular; }
+    #footer-bottom .space .icon-content {
+      display: flex;
+      justify-content: center; }
+      #footer-bottom .space .icon-content .icon-footer {
+        font-size: 20px;
+        color: #fff;
+        margin-left: 20px; }
+
+.wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+/*# sourceMappingURL=style.min.css~~.map */
